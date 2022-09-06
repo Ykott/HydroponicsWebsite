@@ -3,20 +3,20 @@
     font-family: 'Courier New', Courier, monospace;
     font-size: calc(12px + 2vw);
     text-align: center;
-    margin-top: 8vh;
+    padding-top: 8vh;
   }
 
   .blog {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1200px;
+    max-width: 1500px;
   }
 
   .blogpost {
     width: 23vw;
-    max-width: 300px;
-    min-width: 150px;
+    max-width: 400px;
+    min-width: 120px;
     margin: 20px;
     padding: 12px;
     background-color: rgb(255, 255, 255);
@@ -25,8 +25,8 @@
 
   .blogpost img {
     width: 23vw;
-    max-width: 300px;
-    min-width: 150px;
+    max-width: 400px;
+    min-width: 120px;
     border-top-left-radius: 1vw;
     border-top-right-radius: 1vw;
   }
@@ -38,10 +38,11 @@
   }
 
   .blogpost .title {
+    margin-top: 10px;
     text-align: center;
     font-weight: 700;
     font-family: 'Courier New', Courier, monospace;
-    font-size: calc(7px + 1.5vw);
+    font-size: calc(7px + 1.2vw);
   }
 
   .blogpost .subtitle {
@@ -53,91 +54,101 @@
     display: flex;
     justify-content: center;
   }
+
+  .blog .blogpost a {
+    text-decoration: none;
+    color: black;
+  }
 </style>
 
 <div id="blogtitle">Latest From the Blog</div>
 <div class="blogcase">
   <div class="blog">
 
+
+
     <div class=blogpost>
-      <img src="/placeholder.png">
-      <div class="catagory">cat</div>
-      <div class="title">Verticle Gardening</div>
-      <div class="subtitle">A guide to verticle gardening, whether it is right for you and how you can incorportate it
-        in your hydroponic garden</div>
-      <div class="date">8/13/22</div>
+      <a href="../../blogs/budget-hydroponics/budget-hydropnics.html"><img
+          src="../../blogs/budget-hydroponics/Photos/title.jpg"></a>
+      <a href="../../blogs/budget-hydroponics/budget-hydropnics.html">
+        <div class="title">Budget Hydroponics</div>
+      </a>
+      <div class="subtitle">How to save money in your hydropnic system. Effective tips and tricks to reduce costs and
+        make your system better.
+      </div>
+      <div class="date">9/4/22</div>
     </div>
+
     <div class=blogpost>
-      <img src="/placeholder.png">
-      <div class="catagory">cat</div>
-      <div class="title">Verticle Gardening</div>
-      <div class="subtitle">A guide to verticle gardening, whether it is right for you and how you can incorportate it
-        in
-        your hydroponic garden</div>
-      <div class="date">8/13/22</div>
+      <a href="../../blogs/clean-your-hydroponic-system/clean-your-hydroponic-system.html"><img
+          src="../../blogs/clean-your-hydroponic-system/photos/title.jpg"></a>
+      <a href="../../blogs/clean-your-hydroponic-system/clean-your-hydroponic-system.html">
+        <div class="title">How to Clean your Hydroponic System</div>
+      </a>
+      <div class="subtitle"> Keeping your system clean is essential to a high quality hydropnic
+        system
+      </div>
+      <div class="date">9/2/22</div>
     </div>
+
     <div class=blogpost>
-      <img src="/placeholder.png">
-      <div class="catagory">cat</div>
-      <div class="title">Verticle Gardening</div>
-      <div class="subtitle">A guide to verticle gardening, whether it is right for you and how you can incorportate it
-        in
-        your hydroponic garden</div>
-      <div class="date">8/13/22</div>
+      <a href="../../blogs/grow-lights/grow-lights.html"><img src="../../blogs/grow-lights/photos/title.jpg"></a>
+      <a href="../../blogs/grow-lights/grow-lights.html">
+        <div class="title">How to Choose the Best Grow Lights</div>
+      </a>
+      <div class="subtitle"> Grow lights can make or break your system. This guide will help you
+        choose which lights are best.
+      </div>
+      <div class="date">8/31/22</div>
     </div>
+
     <div class=blogpost>
-      <img src="/placeholder.png">
-      <div class="catagory">cat</div>
-      <div class="title">Verticle Gardening</div>
-      <div class="subtitle">A guide to verticle gardening, whether it is right for you and how you can incorportate it
-        in
-        your hydroponic garden</div>
-      <div class="date">8/13/22</div>
+      <a href="../../blogs/history-pf-hydroponics/history-of-hydroponics.html"><img
+          src="../../blogs/history-pf-hydroponics/photos/title.jpg"></a>
+      <a href="../../blogs/history-pf-hydroponics/history-of-hydroponics.html">
+        <div class="title">The History of Hydroponics</div>
+      </a>
+      <div class="subtitle"> The history of hydroponics is suprisingly complex, it dates back over 2000 years
+      </div>
+      <div class="date">8/29/22</div>
     </div>
+
     <div class=blogpost>
-      <img src="/placeholder.png">
-      <div class="catagory">cat</div>
-      <div class="title">Verticle Gardening</div>
-      <div class="subtitle">A guide to verticle gardening, whether it is right for you and how you can incorportate it
-        in
-        your hydroponic garden</div>
-      <div class="date">8/13/22</div>
+      <a href="../../blogs/reuse-your-hydroponic-wastewater/reuse-your-hydroponics-wastewater.html"><img
+          src="../../blogs/reuse-your-hydroponic-wastewater/photos/title.jpg"></a>
+      <a href="../../blogs/reuse-your-hydroponic-wastewater/reuse-your-hydroponics-wastewater.html">
+        <div class="title">How to Reuse Hydroponic Wastewater</div>
+      </a>
+      <div class="subtitle"> Hydroponic wastewater is a huge hassle to deal with. Start reusing it!
+      </div>
+      <div class="date">8/27/22</div>
     </div>
+
     <div class=blogpost>
-      <img src="/placeholder.png">
-      <div class="catagory">cat</div>
-      <div class="title">Verticle Gardening</div>
-      <div class="subtitle">A guide to verticle gardening, whether it is right for you and how you can incorportate it
-        in
-        your hydroponic garden</div>
-      <div class="date">8/13/22</div>
+      <a href="../../blogs/vertical_gardening/vertical_gardening.html"><img
+          src="../../blogs/vertical_gardening/photos/title.jpg"></a>
+      <a href="../../blogs/vertical_gardening/vertical_gardening.html">
+        <div class="title">Verticle Gardening, What and Why</div>
+      </a>
+      <div class="subtitle"> These gardens go up instead of side to side! Save space and money and look cool while you
+        do it.
+      </div>
+      <div class="date">8/25/22</div>
     </div>
+
     <div class=blogpost>
-      <img src="/placeholder.png">
-      <div class="catagory">cat</div>
-      <div class="title">Verticle Gardening</div>
-      <div class="subtitle">A guide to verticle gardening, whether it is right for you and how you can incorportate it
-        in
-        your hydroponic garden</div>
-      <div class="date">8/13/22</div>
+      <a href="../../blogs/hydro-guide/hydro-guide.html"><img src="../../blogs/hydro-guide/Photos/title.jpg"></a>
+      <a href="../../blogs/hydro-guide/hydro-guide.html">
+        <div class="title">The Guide to Hydroponics</div>
+      </a>
+      <div class="subtitle">Our definitive guide on hydroponics to help guide you through the fun, exciting world of at
+        home hydroponics
+
+      </div>
+      <div class="date">8/23/22</div>
     </div>
-    <div class=blogpost>
-      <img src="/placeholder.png">
-      <div class="catagory">cat</div>
-      <div class="title">Verticle Gardening</div>
-      <div class="subtitle">A guide to verticle gardening, whether it is right for you and how you can incorportate it
-        in
-        your hydroponic garden</div>
-      <div class="date">8/13/22</div>
-    </div>
-    <div class=blogpost>
-      <img src="/placeholder.png">
-      <div class="catagory">cat</div>
-      <div class="title">Verticle Gardening</div>
-      <div class="subtitle">A guide to verticle gardening, whether it is right for you and how you can incorportate it
-        in
-        your hydroponic garden</div>
-      <div class="date">8/13/22</div>
-    </div>
+
+
+
   </div>
 </div>

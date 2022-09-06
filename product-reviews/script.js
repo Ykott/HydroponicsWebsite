@@ -34,6 +34,9 @@ const body = document.querySelector("body")
 const bodies = document.querySelectorAll(".body")
 const continued = document.querySelectorAll(".bodyContinued")
 const bodycase = document.querySelector('.bodycase')
+const likebox = document.querySelectorAll(".likebox")
+const description = document.querySelectorAll('.description')
+const itemtitle = document.querySelectorAll(".itemtitle")
 console.log(bodycase);
 
 
@@ -44,11 +47,22 @@ window.mobileCheck = function () {
 };
 window.addEventListener('resize', reportWindowSize);
 function reportWindowSize() {
-  if (mobileCheck || window.innerWidth < 1000) {
+  if (mobileCheck() || window.innerWidth < 1000) {
     panel.remove();
     bodycase.style.marginTop = "10px";
     bodycase.style.marginRight = "0px";
     bodycase.style.paddingRight = "0px";
+    continued.forEach(element => {
+      element.style.fontSize = "18px";
+      element.style.marginTop = "30px";
+      element.style.marginBottom = "30px";
+    });
+    description.forEach(element => {
+      element.style.padding = "10px";
+    })
+  }
+
+  if (mobileCheck()) {
     bodies.forEach(element => {
       element.style.fontSize = "18px";
       element.style.marginTop = "30px";
@@ -76,8 +90,13 @@ function reportWindowSize() {
       element.style.marginTop = "30px";
       element.style.marginBottom = "30px";
     });
+    description.forEach(element => {
+      element.style.paddingLeft = "80px";
+      element.style.paddingRight = "80px";
+    })
   }
 }
 reportWindowSize();
+
 
 
